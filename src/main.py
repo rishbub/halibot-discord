@@ -13,8 +13,8 @@ logger.addHandler(handler)
 #Get the parameters
 print("Getting the parameters...")
 param = open("param.txt", "r")
-token = param.readline().replace("\n","")
-command_phrase = param.readline().replace("\n","")
+token = param.readline().replace("\n","")           # the  first line of param.txt is the token
+command_phrase = param.readline().replace("\n","")  # the second line of param.txt is the command phrase
 param.close()
 
 client = discord.Client()
